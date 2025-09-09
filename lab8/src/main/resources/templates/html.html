@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин молочной продукции</title>
+</head>
+<body>
+<h1>Добро пожаловать в магазин молочной продукции!</h1>
+<h2>Наши продукты:</h2>
+<ul>
+    <li th:each="product : ${products}">
+        <span th:text="${product.name}">Product Name</span> -
+        <span th:text="${product.price}">Price</span> руб.
+    </li>
+</ul>
+</body>
+</html>

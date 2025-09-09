@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Подтверждение заказа - Магазин молочной продукции</title>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+
+<div class="navbar">
+  <nav>
+    <a th:href="@{/about}">О нас</a>
+    <a th:href="@{/products}">Продукция</a>
+    <a th:href="@{/sales}">Акции</a>
+    <a th:href="@{/contacts}">Контакты</a>
+    <a th:href="@{/feedback}">Отзывы</a>
+  </nav>
+  <button class="auth-button">Войти/Выйти</button>
+</div>
+
+<!-- Основной контент -->
+<div class="container">
+  <h1>Спасибо за ваш заказ!</h1>
+  <p>Ваш заказ успешно оформлен.</p>
+  <p><strong>Имя:</strong> <span th:text="${name}"></span></p>
+  <p><strong>Email:</strong> <span th:text="${email}"></span></p>
+  <p><strong>Продукт:</strong> <span th:text="${product}"></span></p>
+  <p><strong>Количество:</strong> <span th:text="${quantity}"></span></p>
+</div>
+
+<footer>
+  <p>&copy; 2024 Магазин молочной продукции. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

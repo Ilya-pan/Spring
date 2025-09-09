@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Магазин молочной продукции</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<div class="navbar">
+    <nav>
+        <a th:href="@{/about}">О нас</a>
+        <a th:href="@{/products}">Продукция</a>
+        <a th:href="@{/sales}">Акции</a>
+        <a th:href="@{/contacts}">Контакты</a>
+        <a th:href="@{/feedback}">Отзывы</a> <!-- Ссылка на страницу с формой -->
+    </nav>
+    <button class="auth-button">Войти/Выйти</button>
+</div>
+
+<!-- Основной контент -->
+<div class="container">
+    <h1>Добро пожаловать в наш магазин молочной продукции!</h1>
+    <h3>Мы предлагаем широкий ассортимент свежих и качественных молочных изделий.</h3>
+</div>
+
+<!-- Футер -->
+<footer>
+    <p>&copy; 2024 Магазин молочной продукции. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

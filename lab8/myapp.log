@@ -1,0 +1,323 @@
+2025-09-09T12:14:47.564+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.4 with PID 91784 (C:\Users\Илья\Desktop\УЧЕБА\4 курс\7 семак\Спринг\8 лаб спринг\demo\target\classes started by Ilya in C:\Users\Илья\Desktop\УЧЕБА\4 курс\7 семак\Спринг\8 лаб спринг\demo)
+2025-09-09T12:14:47.573+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2025-09-09T12:14:47.617+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Илья\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.4.0\htmlunit-websocket-client-4.4.0.jar referenced one or more files that do not exist: file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-client-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-client-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-http-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-util-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-io-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-common-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-api-9.4.55.v20240627.jar
+2025-09-09T12:14:47.617+03:00  INFO 91784 --- [buildingstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09T12:14:47.617+03:00  INFO 91784 --- [buildingstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09T12:14:48.431+03:00  INFO 91784 --- [buildingstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-09T12:14:48.509+03:00  INFO 91784 --- [buildingstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2025-09-09T12:14:49.313+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-09T12:14:49.330+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-09T12:14:49.330+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-09-09T12:14:49.411+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-09T12:14:49.411+03:00  INFO 91784 --- [buildingstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1793 ms
+2025-09-09T12:14:49.448+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-09T12:14:49.651+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-09T12:14:49.653+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-09T12:14:49.663+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-09T12:14:49.851+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-09T12:14:49.933+03:00  INFO 91784 --- [buildingstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-09-09T12:14:49.981+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-09T12:14:50.282+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-09T12:14:51.051+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-09T12:14:51.064+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists orders cascade 
+2025-09-09T12:14:51.067+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists product cascade 
+2025-09-09T12:14:51.068+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists user_entity cascade 
+2025-09-09T12:14:51.068+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists orders_seq
+2025-09-09T12:14:51.068+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists product_seq
+2025-09-09T12:14:51.073+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create sequence orders_seq start with 1 increment by 50
+2025-09-09T12:14:51.075+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create sequence product_seq start with 1 increment by 50
+2025-09-09T12:14:51.078+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table orders (
+        quantity integer not null,
+        id bigint not null,
+        email varchar(255),
+        name varchar(255),
+        product varchar(255),
+        primary key (id)
+    )
+2025-09-09T12:14:51.082+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table product (
+        price integer not null,
+        id bigint not null,
+        description varchar(255),
+        name varchar(255),
+        primary key (id)
+    )
+2025-09-09T12:14:51.083+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table user_entity (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+2025-09-09T12:14:51.090+03:00  INFO 91784 --- [buildingstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09T12:14:51.499+03:00  WARN 91784 --- [buildingstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-09T12:14:51.626+03:00  INFO 91784 --- [buildingstore] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-09T12:14:51.626+03:00  WARN 91784 --- [buildingstore] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-09-09T12:14:52.289+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/styles/'], Ant [pattern='/styles/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.290+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/static/**'], Ant [pattern='/static/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.290+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/css'], Ant [pattern='/css']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.290+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/styles/**'], Ant [pattern='/styles/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.290+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/static/**'], Ant [pattern='/static/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.290+03:00  WARN 91784 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/css'], Ant [pattern='/css']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:14:52.905+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-09T12:14:52.931+03:00  INFO 91784 --- [buildingstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-09T12:14:52.939+03:00  INFO 91784 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 5.815 seconds (process running for 6.393)
+2025-09-09T12:14:52.960+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for product_seq
+2025-09-09T12:14:52.999+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:14:53.005+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for product_seq
+2025-09-09T12:14:53.006+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:14:53.006+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:14:53.008+03:00 DEBUG 91784 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:14:53.035+03:00  INFO 91784 --- [buildingstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09T12:14:53.035+03:00  INFO 91784 --- [buildingstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-09T12:14:53.036+03:00  INFO 91784 --- [buildingstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-09T12:15:16.795+03:00 DEBUG 91784 --- [buildingstore] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        ue1_0.id 
+    from
+        user_entity ue1_0 
+    where
+        ue1_0.username=? 
+    fetch
+        first ? rows only
+2025-09-09T12:15:16.915+03:00 DEBUG 91784 --- [buildingstore] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        user_entity
+        (password, username, id) 
+    values
+        (?, ?, default)
+2025-09-09T12:15:20.670+03:00 DEBUG 91784 --- [buildingstore] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        ue1_0.id,
+        ue1_0.password,
+        ue1_0.username 
+    from
+        user_entity ue1_0 
+    where
+        ue1_0.username=?
+2025-09-09T12:15:33.202+03:00 DEBUG 91784 --- [buildingstore] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        p1_0.price 
+    from
+        product p1_0
+2025-09-09T12:15:41.774+03:00  INFO 91784 --- [buildingstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09T12:15:41.776+03:00 DEBUG 91784 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists orders cascade 
+2025-09-09T12:15:41.778+03:00 DEBUG 91784 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists product cascade 
+2025-09-09T12:15:41.779+03:00 DEBUG 91784 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists user_entity cascade 
+2025-09-09T12:15:41.781+03:00 DEBUG 91784 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists orders_seq
+2025-09-09T12:15:41.781+03:00 DEBUG 91784 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists product_seq
+2025-09-09T12:15:41.791+03:00  WARN 91784 --- [buildingstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-09-09T12:15:41.792+03:00  INFO 91784 --- [buildingstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-09T12:15:41.795+03:00  INFO 91784 --- [buildingstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-09T12:57:42.059+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.4 with PID 89640 (C:\Users\Илья\Desktop\УЧЕБА\4 курс\7 семак\Спринг\8 лаб спринг\lab8\target\classes started by Ilya in C:\Users\Илья\Desktop\УЧЕБА\4 курс\7 семак\Спринг\8 лаб спринг\lab8)
+2025-09-09T12:57:42.061+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : The following 1 profile is active: "dev"
+2025-09-09T12:57:42.112+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Илья\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.4.0\htmlunit-websocket-client-4.4.0.jar referenced one or more files that do not exist: file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-client-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-client-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-http-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-util-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/jetty-io-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-common-9.4.55.v20240627.jar,file:/C:/Users/Илья/.m2/repository/org/htmlunit/htmlunit-websocket-client/4.4.0/websocket-api-9.4.55.v20240627.jar
+2025-09-09T12:57:42.113+03:00  INFO 89640 --- [buildingstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-09T12:57:42.113+03:00  INFO 89640 --- [buildingstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-09T12:57:43.098+03:00  INFO 89640 --- [buildingstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-09T12:57:43.182+03:00  INFO 89640 --- [buildingstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2025-09-09T12:57:44.077+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-09T12:57:44.101+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-09T12:57:44.101+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-09-09T12:57:44.172+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-09T12:57:44.172+03:00  INFO 89640 --- [buildingstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2025-09-09T12:57:44.222+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-09T12:57:44.463+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-09T12:57:44.464+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-09T12:57:44.474+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-09T12:57:44.702+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-09T12:57:44.812+03:00  INFO 89640 --- [buildingstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-09-09T12:57:44.867+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-09T12:57:45.174+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-09T12:57:46.174+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-09T12:57:46.191+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists orders cascade 
+2025-09-09T12:57:46.194+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists product cascade 
+2025-09-09T12:57:46.195+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists user_entity cascade 
+2025-09-09T12:57:46.195+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists orders_seq
+2025-09-09T12:57:46.195+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists product_seq
+2025-09-09T12:57:46.201+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create sequence orders_seq start with 1 increment by 50
+2025-09-09T12:57:46.206+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create sequence product_seq start with 1 increment by 50
+2025-09-09T12:57:46.210+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table orders (
+        quantity integer not null,
+        id bigint not null,
+        email varchar(255),
+        name varchar(255),
+        product varchar(255),
+        primary key (id)
+    )
+2025-09-09T12:57:46.214+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table product (
+        price integer not null,
+        id bigint not null,
+        description varchar(255),
+        name varchar(255),
+        primary key (id)
+    )
+2025-09-09T12:57:46.216+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    create table user_entity (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+2025-09-09T12:57:46.224+03:00  INFO 89640 --- [buildingstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09T12:57:46.737+03:00  WARN 89640 --- [buildingstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-09T12:57:46.846+03:00  INFO 89640 --- [buildingstore] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-09T12:57:46.847+03:00  WARN 89640 --- [buildingstore] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-09-09T12:57:47.464+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/styles/'], Ant [pattern='/styles/']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:47.464+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/static/**'], Ant [pattern='/static/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:47.464+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/css'], Ant [pattern='/css']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:47.464+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/styles/**'], Ant [pattern='/styles/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:47.464+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/static/**'], Ant [pattern='/static/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:47.465+03:00  WARN 89640 --- [buildingstore] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Deferred [Mvc [pattern='/css'], Ant [pattern='/css']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-09-09T12:57:48.107+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-09T12:57:48.138+03:00  INFO 89640 --- [buildingstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-09T12:57:48.146+03:00  INFO 89640 --- [buildingstore] [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 6.525 seconds (process running for 7.139)
+2025-09-09T12:57:48.170+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for product_seq
+2025-09-09T12:57:48.217+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:57:48.224+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for product_seq
+2025-09-09T12:57:48.225+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:57:48.226+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:57:48.227+03:00 DEBUG 89640 --- [buildingstore] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (description, name, price, id) 
+    values
+        (?, ?, ?, ?)
+2025-09-09T12:58:02.806+03:00  INFO 89640 --- [buildingstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-09T12:58:02.806+03:00  INFO 89640 --- [buildingstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-09T12:58:02.807+03:00  INFO 89640 --- [buildingstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-09T12:58:16.115+03:00 DEBUG 89640 --- [buildingstore] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        ue1_0.id,
+        ue1_0.password,
+        ue1_0.username 
+    from
+        user_entity ue1_0 
+    where
+        ue1_0.username=?
+2025-09-09T12:58:20.167+03:00 DEBUG 89640 --- [buildingstore] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        ue1_0.id 
+    from
+        user_entity ue1_0 
+    where
+        ue1_0.username=? 
+    fetch
+        first ? rows only
+2025-09-09T12:58:20.277+03:00 DEBUG 89640 --- [buildingstore] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        user_entity
+        (password, username, id) 
+    values
+        (?, ?, default)
+2025-09-09T12:58:22.880+03:00 DEBUG 89640 --- [buildingstore] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        ue1_0.id,
+        ue1_0.password,
+        ue1_0.username 
+    from
+        user_entity ue1_0 
+    where
+        ue1_0.username=?
+2025-09-09T12:58:25.459+03:00 DEBUG 89640 --- [buildingstore] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        p1_0.price 
+    from
+        product p1_0
+2025-09-09T12:58:37.063+03:00  INFO 89640 --- [buildingstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-09T12:58:37.064+03:00 DEBUG 89640 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists orders cascade 
+2025-09-09T12:58:37.065+03:00 DEBUG 89640 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists product cascade 
+2025-09-09T12:58:37.066+03:00 DEBUG 89640 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists user_entity cascade 
+2025-09-09T12:58:37.067+03:00 DEBUG 89640 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists orders_seq
+2025-09-09T12:58:37.067+03:00 DEBUG 89640 --- [buildingstore] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists product_seq
+2025-09-09T12:58:37.076+03:00  WARN 89640 --- [buildingstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-09-09T12:58:37.077+03:00  INFO 89640 --- [buildingstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-09T12:58:37.079+03:00  INFO 89640 --- [buildingstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

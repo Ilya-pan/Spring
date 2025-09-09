@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <script defer>
+    async function submitOrder(event) {
+        event.preventDefault(); // Отключаем стандартное поведение формы
+
+        // Собираем данные из формы
+        const orderData = {
+            name: document.querySelector('#customerName').value,
+            email: document.querySelector('#email').value,
+            product: document.querySelector('#product').value,
+            quantity: document.querySelector('#quantity').value
+        };
+
+        try {
+            // Отправляем JSON на сервер
+            const response = await fetch('/api/orders', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(orderData)
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert('Заказ успешно создан: ID ' + result.id);
+            } else {
+                alert('Ошибка при создании заказа: ' + response.statusText);
+            }
+        } catch (error) {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке заказа.');
+        }
+    }
+  </script>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Главная</a></li>
+      <li><a th:href="@{/products}">Продукция</a></li>
+      <li><a th:href="@{/about}">О нас</a></li>
+      <li><a th:href="@{/contacts}">Контакты</a></li>
+      <li><a th:href="@{/register}">Регистрация</a></li>
+      <li><a th:href="@{/login}">Логин</a></li>
+    </ul>
+  </nav>
+  <h1>Магазин молочной продукции</h1>
+</header>
+
+<main>
+  <section>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <h2>Оформление заказа</h2>
+
+      <div>
+        <label for="customerName">Ваше имя:</label>
+        <input type="text" id="customerName" required />
+      </div>
+
+      <div>
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="product">Выберите продукцию:</label>
+        <select id="product" required>
+          <option value="" disabled selected>Выберите продукт</option>
+          <option value="Натуральный йогурт">Натуральный йогурт</option>
+          <option value="Сыр Гауда">Сыр Гауда</option>
+          <option value="Молоко">Молоко</option>
+          <option value="Сливочное масло">Сливочное масло</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" required />
+      </div>
+
+      <button type="submit">Оформить заказ</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Магазин молочной продукции. Все права защищены.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Продукция - Магазин молочной продукции</title>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+
+<div class="navbar">
+  <nav>
+    <a th:href="@{/about}">О нас</a>
+    <a th:href="@{/products}">Продукция</a>
+    <a th:href="@{/sales}">Акции</a>
+    <a th:href="@{/contacts}">Контакты</a>
+    <a th:href="@{/feedback}">Отзывы</a>
+  </nav>
+  <button class="auth-button">Войти/Выйти</button>
+</div>
+
+<!-- Основной контент -->
+<div class="container">
+  <h1>Наша продукция</h1>
+  <p>Мы предлагаем свежие и натуральные молочные продукты высшего качества.</p>
+
+  <div class="products">
+    <!-- Перебираем список продуктов из базы данных -->
+    <div th:each="product : ${products}" class="product-card">
+      <h2 th:text="${product.name}">Название продукта</h2>
+      <p th:text="${product.description}">Описание продукта</p>
+      <p class="price" th:text="'Цена: ' + ${product.price} + ' руб.'">Цена продукта</p>
+
+      <!-- Кнопка для оформления заказа -->
+      <form th:action="@{/order}" method="get">
+        <input type="hidden" name="productName" th:value="${product.name}"/>
+        <button type="submit">Заказать</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Магазин молочной продукции. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
